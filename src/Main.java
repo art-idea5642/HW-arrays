@@ -39,16 +39,10 @@ public class Main {
         }
         System.out.println();
         //task4
-        for (int i = 0; i <= a.length-1; i++) {
-            int f = a[i];
-            if ((f % 2) != 0) {
-                f = f + 1;
-            }
-            System.out.print(f);
-            if (i < 2) {
-                System.out.print(", ");
-            }
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] % 2 != 0) a[i] = a[i] + 1;
         }
-        System.out.println();
+        System.out.println(Arrays.toString(a));
     }
+
 }
